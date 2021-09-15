@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- Simple Image -->
+   <img src="https://rusnasa.space/wp-content/uploads/mercury-300x300.png" alt="Just image">
+   <!-- Responsitive image /-->
+   <picture>
+       <source media="(min-width: 1024px)" srcset="https://rusnasa.space/wp-content/uploads/mercury-600x600.png">
+       <source media="(min-width: 768px)" srcset="https://rusnasa.space/wp-content/uploads/mercury-300x300.png">
+       <source media="(min-width: 360px)" srcset="https://rusnasa.space/wp-content/uploads/mercury-100x100.png">
+       <img src="https://rusnasa.space/wp-content/uploads/mercury-300x300.png" alt="Just image">
+   </picture>
+   <!-- Image with semantic discription -->
+   <figure>
+       <img src="https://rusnasa.space/wp-content/uploads/mercury-300x300.png" alt="Just image">
+       <figcaption> It is a Mercury</figcaption>
+   </figure>
+   <!-- Images with semantic discription -->
+   <figure>
+       <img src="https://urfu.ru/fileadmin/user_upload/urfu.ru_en/News/PFQ97KNjjTebMzenT3GeKd.jpg" alt="Just image">
+       <img src="https://cosmos.agency/wp-content/uploads/2016/03/mercury_800-1-300x300.png" alt="Just image">
+       <figcaption>
+           <p> Mercury is the planet closest to the Sun (the first planet in the Solar System).
+            Mercury belongs to the terrestrial planets and is named after the ancient Roman god of commerce. Mercury has no natural satellites. Has a very rarefied atmosphere.
+            Mercury has been known since ancient times.
+            Mercury's only neighbor is Venus.
+            Mercury has a large iron core, which makes up 83% and 60% of the body's mass of the world's magnetic field.</p>
+       </figcaption>
+   </figure>
+</body>
+</html>
