@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Abbreviation -->
+    <abbr title="HyperText Markup Language">MVEMJSUNP</abbr>
+    " planets by the Solar System
+        "
+    <hr>
+    <!-- List of options -->
+    <input list="list">
+    <datalist id="list">
+        <option value="Mercury"></option>
+        <option value="Venus"></option>
+        <option value="Earth"></option>
+        <option value="Mars"></option>
+        <option value="Jupiter"></option>
+        <option value="Saturn"></option>
+        <option value="Neptune"></option>
+        <option value="Pluto"></option>
+    </datalist>
+    <hr>
+    <!-- Meter -->
+    <meter value="15" max="100" low="40" high="60">Size of Pluto</meter>
+    <br>
+    <meter value="30" max="100" low="40" high="60">Size of Mercury</meter>
+    <br>
+    <meter value="50" max="100" low="10" high="60">Size of Mars</meter>
+    <br>
+    <meter value="85" max="100" low="10" high="60">Size of Venus</meter>
+    <br>
+    <meter value="100" max="100">Size of Earth</meter>
+    <hr>
+    <!-- Progress bar -->
+    <progress value="50" max="100"></progress>
+    <hr>
+    <!-- No scripts tag -->
+    <noscript>Please switch on scripts in your brouser!</noscript>
+    <!-- Marked text -->
+    <mark>Important</mark>
+    <h2>"There are "
+        <mark>eight planets</mark>
+        "in our Solar System"
+    </h2>
+    <hr>
+    <canvas id="exsmple" width="200" height="200"></canvas>
+    <script>
+        const drawingCanvas = document.getElementById('example');
+        if(drawingCanvas && drawingCanvas.getContext) {
+            const context = drawingCanvas.getContext('2d');
+            context.fillStyle = "#000";
+            context.beginPath();
+            context.arc(100, 100, 100, 0, Math.PI*2, true);
+            context.closePath();
+            context.stroke();
+            context.fill();
+        }
+    </script>
+            </body>
+</html>

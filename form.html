@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Simple form -->
+    <form action="formHandler.php" name="simple form" autocomplete="on">
+        <input type="text">
+        <br>
+        <select>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+        <br>
+        <textarea name="text" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">
+        <br>
+    </form>
+    <hr>
+    <!-- Fieldset & label -->
+    <form action="formHandler.php" name="simple form2">
+        <fieldset>
+            <legend>Simple from legend</legend>
+            <input type="text">
+            <br>
+            <select>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+            </select>
+            <br>
+            <textarea name="text" cols="45" rows="10"></textarea>
+            <br>
+            <input type="submit">
+            <br>
+        </fieldset>
+    </form>
+    <hr>
+    <!-- Inner fieldset & label -->
+    <form action="formHandler.php" name="simple form3">
+        <fieldset>
+            <legend>Personal data</legend>
+            <input type="text">
+            <br>
+            <select>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+            </select>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Message</legend>
+            <textarea name="text" cols="45" rows="10"></textarea>
+            <br>
+        </fieldset>
+        <input type="submit">
+    </form>
+    <hr>
+    <!-- Form element label -->
+    <label for="username">Username</label>
+    <input id="username">
+    <br>
+    <label>
+             Password
+        <input type="password">    
+    </label>
+    <hr>
+    <!-- Result form -->
+    <form action="formHandler.php" name="simple form3">
+        <fieldset>
+            <legend>Personal data</legend>
+            <label for="name">Your name</label>
+            <input type="text" id="name">
+            <br>
+            <label for="speciality">Choose your speciality</label>
+            <select id="speciality">
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+            </select>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Message</legend>
+            <label for="message">Enter your message</label>
+            <textarea  name="text" id="message" cols="45" rows="10"></textarea>
+            <br>
+        </fieldset>
+        <input type="submit">
+        <br>
+    </form>
+    <hr>
+    <!-- Textarea -->
+    <textarea cols="45" rows="10"></textarea>
+    <br>
+    <textarea cols="20" rows="5" name="test"></textarea>
+    <br>
+    <textarea cols="20" rows="5" autofocus></textarea>
+    <br>
+    <textarea cols="20" rows="5" disabled></textarea>
+    <br>
+    <textarea cols="20" rows="5" readonly>This text you can't change</textarea>
+    <br>
+    <textarea cols="20" rows="5" placeholder="your message..."></textarea>
+    <br>
+    <textarea cols="20" rows="5" maxlength="5"></textarea>
+    <br>
+    <textarea cols="20" rows="5" required></textarea>
+    <br>
+    <hr>
+    <!-- Required attribute -->
+    <form>
+        <textarea cols="20" rows="5" required></textarea>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+    <hr>
+    <!-- Select -->
+    <select>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+    </select>
+    <hr>
+    <!-- Select with optgroup -->
+    <select>
+        <optgroup label="Speciality"></optgroup>
+        <optgroup label="Direction"></optgroup>
+    </select>
+    <hr>
+    <!-- Multiple select -->
+    <select multiple>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+    </select>
+    <hr>
+    <!-- Different options -->
+    <select>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end" label="Back-end"></option>
+        <option value="sel" selected>Selected</option>
+        <option value="dis" disabled>Disabled</option>
+    </select>
+    <hr>
+</body>
+
+</html>
